@@ -2,11 +2,11 @@ package OneDimensionalArrays;
 import java.util.*;
 import java.util.Random;
 
-public class Couples {
+public class Pairs {
     public int[] array;
     public int num;
 
-    Couples() {
+    Pairs() {
         Random random = new Random();
         this.array = new int[random.nextInt(10)+5];
         this.num = 15;
@@ -30,7 +30,7 @@ public class Couples {
 
 
     public static void main(String[] args) {
-        Couples couples = new Couples();
-        couples.findCouples();
+        Pairs pairs = new Pairs();
+        pairs.findCouples();
     }
 }
