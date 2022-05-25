@@ -1,4 +1,4 @@
-package OneDimensionalArrays;
+package OneDimensionalArrays.basic;
 
 public class AllElementsEqual {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package OneDimensionalArrays;
+package OneDimensionalArrays.basic;
 
 public class Totals {
     public static void main(String[] args) {

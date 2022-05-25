@@ -1,4 +1,4 @@
-package OneDimensionalArrays;
+package OneDimensionalArrays.basic;
 import java.util.Arrays;
 import java.util.Random;
 
