@@ -1,5 +1,7 @@
 package ClassExercise.Auction;
 
+import java.util.Arrays;
+
 public class Auction {
 
     private String title;
@@ -24,7 +26,7 @@ public class Auction {
         this.offers = offers;
     }
 
-    public static double maxOffer(double[] offers) {
+    public  double maxOffer() {
         double maxOffer = 0;
         for (int i = 0; i < offers.length; i++) {
             if (offers[i] > maxOffer) {
@@ -34,16 +36,32 @@ public class Auction {
         return maxOffer;
     }
 
-    public static int maxOfferCount(double[] offers) {
-        double offerAmount = 0;
-        double maxOffer = maxOffer(offers);
+    public int maxOfferCount() {
+        int offerAmount = 0;
+        double maxOffer = maxOffer();
         for (int i = 0; i < offers.length; i++) {
             if (offers[i] == maxOffer) {
                 offerAmount++;
             }
         }
-        return 0;
+        return offerAmount;
 
     }
 
+    public int[] serialArray() {
+        double maxOffer = maxOffer();
+        int[] serialArray = new int[maxOfferCount()];
+        int counter = 0;
+        for (int i = 0; i < offers.length; i++) {
+            if (offers[i] == maxOffer) {
+                serialArray[counter] = i;
+                counter++;
+            }
+        }
+        return serialArray;
+    }
+
+    public String toString() {
+        return "This Auction object has the name " + title + " and the following offers \n " + Arrays.toString(offers);
+    }
 }
