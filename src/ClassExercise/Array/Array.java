@@ -1,6 +1,7 @@
 package ClassExercise.Array;
 
 public class Array {
+
     public static int[] array(int[] arr1, int[] arr2) {
         int[] newArr = new int[Math.min(arr1.length, arr2.length)];
         int counter = 0;
