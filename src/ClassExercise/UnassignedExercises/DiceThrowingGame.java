@@ -1,3 +1,5 @@
+package ClassExercise.UnassignedExercises;
+
 public class DiceThrowingGame {
     int value;
 

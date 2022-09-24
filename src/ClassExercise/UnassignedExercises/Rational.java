@@ -1,4 +1,4 @@
-package ClassExercise;
+package ClassExercise.UnassignedExercises;
 
 import java.util.Random;
 

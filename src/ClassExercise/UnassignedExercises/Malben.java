@@ -1,3 +1,5 @@
+package ClassExercise.UnassignedExercises;
+
 import java.util.Scanner;
 
 public class Malben {
