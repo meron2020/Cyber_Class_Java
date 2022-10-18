@@ -18,6 +18,28 @@ public class SuperDelicacy {
         }
     }
 
+    public double getDelicacyPriceByName(String name) {
+        for (int i = 0; i < this.delicacyNumber; i++) {
+            if (this.delicacies[i].getName().equals(name)) {
+                return this.delicacies[i].getPrice();
+            }
+        }
+        return 0;
+    }
+
+    public String[] sharedDelicacies(SuperDelicacy otherSuperDelicacy) {
+        String[] delicacies = new String[this.delicacyNumber];
+        int numberOfDelicacies = 0;
+        for (int i = 0; i < this.delicacyNumber; i++) {
+            if (otherSuperDelicacy.isDelicacyInStore(this.delicacies[i].getName()) > 0) {
+                delicacies[numberOfDelicacies] = this.delicacies[i].getName();
+            }
+        }
+
+        return delicacies;
+
+    }
+
     public double isDelicacyInStore(String name) {
         for (int i = 0; i < this.delicacyNumber; i++) {
             if (this.delicacies[i].getName().equals(name)) {
