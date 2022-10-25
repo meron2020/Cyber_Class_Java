@@ -1,6 +1,16 @@
 package DataStructure.IntNode;
 
 public class IntNode {
+    public IntNode(int value, IntNode next) {
+        this.next = next;
+        this.value = value;
+    }
+
+    public IntNode(int value) {
+        this.next = null;
+        this.value = value;
+    }
+
     public int getValue() {
         return value;
     }

@@ -1,4 +1,6 @@
-package DataStructure.IntNode;
+package DataStructure.IntNode.HW;
+
+import DataStructure.IntNode.IntNode;
 
 public class BiggerThanLast {
     public static void biggerThanLast(IntNode firstInList) {
