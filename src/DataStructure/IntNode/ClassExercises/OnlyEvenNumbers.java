@@ -9,7 +9,7 @@ public class OnlyEvenNumbers {
         IntNode p = l1;
         while (p.getNext() != null) {
             if (p.getValue() % 2 == 0) {
-                l2.setNext(new IntNode(p.getValue()));
+                last.setNext(new IntNode(p.getValue()));
                 last = last.getNext();
             }
             p = p.getNext();
