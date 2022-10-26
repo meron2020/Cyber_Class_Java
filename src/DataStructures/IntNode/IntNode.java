@@ -1,4 +1,4 @@
-package DataStructure.IntNode;
+package DataStructures.IntNode;
 
 public class IntNode {
     public IntNode(int value, IntNode next) {

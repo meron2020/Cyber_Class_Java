@@ -1,6 +1,6 @@
-package DataStructure.IntNode.HW;
+package DataStructures.IntNode.HW;
 
-import DataStructure.IntNode.IntNode;
+import DataStructures.IntNode.IntNode;
 
 public class AmountOfSequences {
     public static int sequenceAmount(IntNode firstInList, int number) {

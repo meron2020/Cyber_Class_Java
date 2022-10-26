@@ -1,6 +1,6 @@
-package DataStructure.IntNode.HW;
+package DataStructures.IntNode.HW;
 
-import DataStructure.IntNode.IntNode;
+import DataStructures.IntNode.IntNode;
 
 public class EvenOrOdd {
     public static char moreEvenOrOdd(IntNode firstInList) {

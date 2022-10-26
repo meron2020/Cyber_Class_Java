@@ -1,6 +1,6 @@
-package DataStructure.IntNode.ClassExercises;
+package DataStructures.IntNode.ClassExercises;
 
-import DataStructure.IntNode.IntNode;
+import DataStructures.IntNode.IntNode;
 
 public class CompletingToNum {
     public static void addNodeAfterGivenNode(IntNode nodeBefore, int nodeValue) {

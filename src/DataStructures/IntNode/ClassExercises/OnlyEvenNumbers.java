@@ -1,6 +1,6 @@
-package DataStructure.IntNode.ClassExercises;
+package DataStructures.IntNode.ClassExercises;
 
-import DataStructure.IntNode.IntNode;
+import DataStructures.IntNode.IntNode;
 
 public class OnlyEvenNumbers {
     public static IntNode onlyEvenNumbers(IntNode l1) {

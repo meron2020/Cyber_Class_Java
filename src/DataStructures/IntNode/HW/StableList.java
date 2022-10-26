@@ -1,6 +1,6 @@
-package DataStructure.IntNode.HW;
+package DataStructures.IntNode.HW;
 
-import DataStructure.IntNode.IntNode;
+import DataStructures.IntNode.IntNode;
 
 public class StableList {
     public static boolean isStable(IntNode firstInList) {
