@@ -1,4 +1,4 @@
-package DataStructures.IntNode.ClassExercises;
+package DataStructures.IntNode.ClassExercises.TeacherAssignments;
 
 import DataStructures.IntNode.IntNode;
 
