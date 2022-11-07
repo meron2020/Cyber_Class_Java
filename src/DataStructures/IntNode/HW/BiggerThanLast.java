@@ -1,7 +1,7 @@
 package DataStructures.IntNode.HW;
 
 import DataStructures.IntNode.IntNode;
-
+//Page 76 Question 9
 public class BiggerThanLast {
     public static void biggerThanLast(IntNode firstInList) {
         IntNode p = firstInList;

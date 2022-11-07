@@ -1,7 +1,7 @@
 package DataStructures.IntNode.HW;
 
 import DataStructures.IntNode.IntNode;
-
+// Page 76 Question 6
 public class NoDoubles {
     public static IntNode noDoubles(IntNode l1) {
         IntNode l2 = new IntNode(10);

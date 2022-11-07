@@ -1,7 +1,7 @@
 package DataStructures.IntNode.HW;
 
 import DataStructures.IntNode.IntNode;
-
+//Page 76 Question 2
 public class AmountOfSequences {
     public static int sequenceAmount(IntNode firstInList, int number) {
         int counter = 0;

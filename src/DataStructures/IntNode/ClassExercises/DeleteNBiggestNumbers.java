@@ -1,7 +1,7 @@
 package DataStructures.IntNode.ClassExercises;
 
 import DataStructures.IntNode.IntNode;
-
+//Page 76 Question 14
 public class DeleteNBiggestNumbers {
 
     public static void deleteNumberFromList(IntNode list, int num) {

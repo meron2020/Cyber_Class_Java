@@ -1,7 +1,7 @@
 package DataStructures.IntNode.HW;
 
 import DataStructures.IntNode.IntNode;
-
+//Page 76 Question 12
 public class StableList {
     public static boolean isStable(IntNode firstInList) {
         int amountOfNodes = 1;

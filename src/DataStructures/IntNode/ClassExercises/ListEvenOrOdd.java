@@ -1,7 +1,7 @@
 package DataStructures.IntNode.ClassExercises;
 
 import DataStructures.IntNode.IntNode;
-
+//Page 76 Question 13
 public class ListEvenOrOdd {
     public static void listEvenOrOdd(IntNode list) {
         int counter = 1, secondCounter;

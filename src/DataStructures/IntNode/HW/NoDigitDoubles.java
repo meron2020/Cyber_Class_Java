@@ -1,7 +1,7 @@
 package DataStructures.IntNode.HW;
 
 import DataStructures.IntNode.IntNode;
-
+//Page 76 Question 6
 public class NoDigitDoubles {
     public static IntNode noDigitDoubles() {
         IntNode l1 = new IntNode((int) (Math.random() * 100));
