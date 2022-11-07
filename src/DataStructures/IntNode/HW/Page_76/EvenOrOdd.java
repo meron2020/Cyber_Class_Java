@@ -1,4 +1,4 @@
-package DataStructures.IntNode.HW;
+package DataStructures.IntNode.HW.Page_76;
 
 import DataStructures.IntNode.IntNode;
 //Page 76 Question 4

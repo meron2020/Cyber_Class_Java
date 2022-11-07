@@ -1,4 +1,4 @@
-package DataStructures.IntNode.ClassExercises;
+package DataStructures.IntNode.ClassExercises.Page_76;
 
 import DataStructures.IntNode.IntNode;
 
