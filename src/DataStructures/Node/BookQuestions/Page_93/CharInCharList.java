@@ -1,4 +1,4 @@
-package DataStructures.Node.ClassExercise.Page_93;
+package DataStructures.Node.BookQuestions.Page_93;
 
 import DataStructures.Node.Node;
 
