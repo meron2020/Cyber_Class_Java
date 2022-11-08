@@ -2,6 +2,8 @@ package DataStructures.IntNode.ClassExercises.Page_76;
 
 import DataStructures.IntNode.IntNode;
 
+import java.lang.Object;
+
 //Page 76 Question 14
 public class DeleteNBiggestNumbers {
 
@@ -9,13 +11,13 @@ public class DeleteNBiggestNumbers {
         while (list.getNext() != null) {
             if (list.getNext().getValue() == num) {
                 list.setNext(list.getNext().getNext());
-                break;
+                return list;
             }
         }
         return list;
     }
 
-    public static void deleteNBiggestNumbers(IntNode list, int n) {
+    public static IntNode deleteNBiggestNumbers(IntNode list, int n) {
         IntNode p = new IntNode(0, list);
         int largestNum = p.getNext().getValue();
         for (int i = 0; i < n; i++) {
@@ -27,5 +29,6 @@ public class DeleteNBiggestNumbers {
             }
             list = deleteNumberFromList(list, largestNum);
         }
+        return list.getNext();
     }
 }
