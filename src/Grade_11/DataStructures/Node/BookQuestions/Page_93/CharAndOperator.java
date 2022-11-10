@@ -4,26 +4,31 @@ import Grade_11.DataStructures.Node.Node;
 
 //Page 93 Question 17
 public class CharAndOperator {
+    public static int calc(char ch1, char op, char ch2) {
+        int n1 = (int) ch1 - (int) '0';
+        int n2 = (int) ch2 - (int) '0';
+
+        if (op == '+') {
+            return n1 + n2;
+        }
+        if (op == '-') {
+            return n1 - n2;
+        }
+        if (op == '*') {
+            return n1 * n2;
+        }
+        return n1 / n2;
+    }
+
     public static Node<Integer> charAndOperator(Node<Character> list) {
         Node<Integer> listToReturn = new Node<Integer>(0);
         Node<Integer> pos = listToReturn;
         Node<Character> p = list;
-        while (p.getNext().getNext() != null) {
-            int firstNum = (int) p.getValue() - (int) '0';
-            int secondNum = (int) p.getNext().getNext().getValue() - (int) '0';
-            char operator = p.getNext().getValue();
-            if (operator == '+') {
-                listToReturn.setNext(new Node<>(firstNum + secondNum));
-
-            } else if (operator == '-') {
-                listToReturn.setNext(new Node<>(firstNum - secondNum));
-            } else if (operator == '*') {
-                listToReturn.setNext(new Node<>(firstNum * secondNum));
-            } else if (operator == '/') {
-                listToReturn.setNext(new Node<>(firstNum / secondNum));
-            }
+        while (p != null) {
+            int x = calc(p.getValue(), p.getNext().getValue(), p.getNext().getNext().getValue());
+            pos.setNext(new Node<Integer>(x));
             pos = pos.getNext();
-            p = p.getNext().getNext();
+            p = p.getNext().getNext().getNext();
         }
         return listToReturn.getNext();
     }
