@@ -12,6 +12,14 @@ public class Node<T> {
         this.next = null;
     }
 
+    public static void printList(Node<Integer> list) {
+        Node<Integer> p = list;
+        while (p != null) {
+            System.out.println(p.getValue());
+            p = p.getNext();
+        }
+    }
+
     public static Node<Character> buildList1() {
         //from first to last
         Scanner reader = new Scanner(System.in);
@@ -52,6 +60,28 @@ public class Node<T> {
             last = last.getNext();
             System.out.println("enter char, enter @ to stop");
             n = reader.next();
+        }
+        return first;
+    }
+
+    public static Node<Integer> buildListInteger() {
+        //from first to last
+        Scanner reader = new Scanner(System.in);
+        System.out.println("enter an integer, enter -999 to stop");
+        Integer n = reader.nextInt();
+        if (Objects.equals(n, -999))
+            return null;
+
+        Node<Integer> first = new Node<Integer>(n);
+        Node<Integer> last = first;
+
+        System.out.println("enter a string, enter -999 to stop");
+        n = reader.nextInt();
+        while (!Objects.equals(n, -999)) {
+            last.setNext(new Node<Integer>(n));
+            last = last.getNext();
+            System.out.println("enter char, enter -999 to stop");
+            n = reader.nextInt();
         }
         return first;
     }
