@@ -1,4 +1,4 @@
-package Grade_11.DataStructures.Node.BookQuestions.Page_99;
+package Grade_11.DataStructures.Node.BookQuestions.Page_99.Q47;
 
 import Grade_11.DataStructures.Node.Node;
 
