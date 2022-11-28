@@ -40,7 +40,7 @@ public class Program {
             p = p.getNext();
         }
         p = list2;
-        Node<PolynomialCouple> coupleToCheck = listToReturn;
+        Node<PolynomialCouple> coupleToCheck = listToReturn.getNext();
         while (p != null) {
             listToReturn = addCoefficient(coupleToCheck, p);
             p = p.getNext();
