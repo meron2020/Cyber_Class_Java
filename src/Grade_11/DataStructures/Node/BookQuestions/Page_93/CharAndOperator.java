@@ -1,6 +1,6 @@
 package Grade_11.DataStructures.Node.BookQuestions.Page_93;
 
-import Grade_11.DataStructures.Node.Node;
+import Grade_11.DataStructures.NodeClass;
 
 //Page 93 Question 17
 public class CharAndOperator {
@@ -20,13 +20,13 @@ public class CharAndOperator {
         return n1 / n2;
     }
 
-    public static Node<Integer> charAndOperator(Node<Character> list) {
-        Node<Integer> listToReturn = new Node<Integer>(0);
-        Node<Integer> pos = listToReturn;
-        Node<Character> p = list;
+    public static NodeClass<Integer> charAndOperator(NodeClass<Character> list) {
+        NodeClass<Integer> listToReturn = new NodeClass<Integer>(0);
+        NodeClass<Integer> pos = listToReturn;
+        NodeClass<Character> p = list;
         while (p != null) {
             int x = calc(p.getValue(), p.getNext().getValue(), p.getNext().getNext().getValue());
-            pos.setNext(new Node<Integer>(x));
+            pos.setNext(new NodeClass<Integer>(x));
             pos = pos.getNext();
             p = p.getNext().getNext().getNext();
         }
@@ -34,8 +34,8 @@ public class CharAndOperator {
     }
 
     public static void main(String[] args) {
-        Node<Integer> listReturned = charAndOperator(Node.buildList1());
-        Node<Integer> p = listReturned;
+        NodeClass<Integer> listReturned = charAndOperator(NodeClass.buildList1());
+        NodeClass<Integer> p = listReturned;
         while (p != null) {
             System.out.println(p.getValue());
             p = p.getNext();

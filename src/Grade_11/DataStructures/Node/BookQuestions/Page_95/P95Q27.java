@@ -1,14 +1,14 @@
 package Grade_11.DataStructures.Node.BookQuestions.Page_95;
 
-import Grade_11.DataStructures.Node.Node;
+import Grade_11.DataStructures.NodeClass;
 
 public class P95Q27 {
-    public static Node<Integer> deleteSequenceBiggerThanTwo(Node<Integer> list, int num) {
-        Node<Integer> pos1 = list;
+    public static NodeClass<Integer> deleteSequenceBiggerThanTwo(NodeClass<Integer> list, int num) {
+        NodeClass<Integer> pos1 = list;
         while (pos1.getNext().getValue() != num) {
             pos1 = pos1.getNext();
         }
-        Node<Integer> pos2 = pos1;
+        NodeClass<Integer> pos2 = pos1;
         while (pos2.getNext() != null) {
             if (pos2.getNext().getValue() == num) {
                 pos2 = pos2.getNext();
@@ -19,9 +19,9 @@ public class P95Q27 {
         return list;
     }
 
-    public static Node<Integer> sequenceBiggerThanTwo(Node<Integer> list) {
-        Node<Integer> first = new Node<Integer>(0, list);
-        Node<Integer> pos1 = first;
+    public static NodeClass<Integer> sequenceBiggerThanTwo(NodeClass<Integer> list) {
+        NodeClass<Integer> first = new NodeClass<Integer>(0, list);
+        NodeClass<Integer> pos1 = first;
         int counter = 1;
         while (pos1.getNext() != null) {
             int currentValue = pos1.getValue();
@@ -43,9 +43,9 @@ public class P95Q27 {
     }
 
     public static void main(String[] args) {
-        Node<Integer> list = Node.buildListInteger();
+        NodeClass<Integer> list = NodeClass.buildListInteger();
         list = sequenceBiggerThanTwo(list);
-        Node.printList(list);
+        NodeClass.printList(list);
     }
 
 

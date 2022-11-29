@@ -1,15 +1,15 @@
 package Grade_11.DataStructures.Node.BookQuestions.Page_99.Q49;
 
-import Grade_11.DataStructures.Node.Node;
+import Grade_11.DataStructures.NodeClass;
 
 public class ListOfTavs {
-    public static Node<Character> createList(Node<TavAndNum> list) {
-        Node<Character> listToReturn = new Node<>('c');
-        Node<Character> pos = listToReturn;
-        Node<TavAndNum> p = list;
+    public static NodeClass<Character> createList(NodeClass<TavAndNum> list) {
+        NodeClass<Character> listToReturn = new NodeClass<>('c');
+        NodeClass<Character> pos = listToReturn;
+        NodeClass<TavAndNum> p = list;
         while (p != null) {
             for (int i = 0; i < p.getValue().getNum(); i++) {
-                pos.setNext(new Node<>(p.getValue().getTav()));
+                pos.setNext(new NodeClass<>(p.getValue().getTav()));
                 pos = pos.getNext();
             }
             p = p.getNext();
@@ -17,20 +17,20 @@ public class ListOfTavs {
         return listToReturn.getNext();
     }
 
-    public static Node<TavAndNum> zip(Node<Character> list) {
-        Node<TavAndNum> listToReturn = new Node<>(new TavAndNum(0, 'l'));
-        Node<Character> pos = list;
+    public static NodeClass<TavAndNum> zip(NodeClass<Character> list) {
+        NodeClass<TavAndNum> listToReturn = new NodeClass<>(new TavAndNum(0, 'l'));
+        NodeClass<Character> pos = list;
 
         while(pos != null) {
             int counter = 1;
             Character character = pos.getValue();
-            Node<Character> p = pos;
+            NodeClass<Character> p = pos;
             while (p != null && p.getValue() == character) {
                 counter++;
                 p = p.getNext();
             }
             pos = p;
-            listToReturn.setNext(new Node<TavAndNum>(new TavAndNum(counter, character)));
+            listToReturn.setNext(new NodeClass<TavAndNum>(new TavAndNum(counter, character)));
         }
         return listToReturn.getNext();
     }

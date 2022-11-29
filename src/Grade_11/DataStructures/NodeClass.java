@@ -1,26 +1,26 @@
-package Grade_11.DataStructures.Node;
+package Grade_11.DataStructures;
 
 import java.util.Objects;
 import java.util.Scanner;
 
-public class Node<T> {
+public class NodeClass<T> {
     private T value;
-    private Node<T> next;
+    private NodeClass<T> next;
 
-    public Node(T value) {
+    public NodeClass(T value) {
         this.value = value;
         this.next = null;
     }
 
-    public static void printList(Node<Integer> list) {
-        Node<Integer> p = list;
+    public static void printList(NodeClass<Integer> list) {
+        NodeClass<Integer> p = list;
         while (p != null) {
             System.out.println(p.getValue());
             p = p.getNext();
         }
     }
 
-    public static Node<Character> buildList1() {
+    public static NodeClass<Character> buildList1() {
         //from first to last
         Scanner reader = new Scanner(System.in);
         System.out.println("enter char, enter @ to stop");
@@ -28,13 +28,13 @@ public class Node<T> {
         if (n == '@')
             return null;
 
-        Node<Character> first = new Node<Character>(n);
-        Node<Character> last = first;
+        NodeClass<Character> first = new NodeClass<Character>(n);
+        NodeClass<Character> last = first;
 
         System.out.println("enter char, enter @ to stop");
         n = reader.next().charAt(0);
         while (n != '@') {
-            last.setNext(new Node<Character>(n));
+            last.setNext(new NodeClass<Character>(n));
             last = last.getNext();
             System.out.println("enter char, enter @ to stop");
             n = reader.next().charAt(0);
@@ -42,7 +42,7 @@ public class Node<T> {
         return first;
     }
 
-    public static Node<String> buildListString() {
+    public static NodeClass<String> buildListString() {
         //from first to last
         Scanner reader = new Scanner(System.in);
         System.out.println("enter a string, enter @ to stop");
@@ -50,13 +50,13 @@ public class Node<T> {
         if (Objects.equals(n, "@"))
             return null;
 
-        Node<String> first = new Node<String>(n);
-        Node<String> last = first;
+        NodeClass<String> first = new NodeClass<String>(n);
+        NodeClass<String> last = first;
 
         System.out.println("enter a string, enter @ to stop");
         n = reader.next();
         while (!Objects.equals(n, "@")) {
-            last.setNext(new Node<String>(n));
+            last.setNext(new NodeClass<String>(n));
             last = last.getNext();
             System.out.println("enter char, enter @ to stop");
             n = reader.next();
@@ -64,7 +64,7 @@ public class Node<T> {
         return first;
     }
 
-    public static Node<Integer> buildListInteger() {
+    public static NodeClass<Integer> buildListInteger() {
         //from first to last
         Scanner reader = new Scanner(System.in);
         System.out.println("enter an integer, enter -999 to stop");
@@ -72,13 +72,13 @@ public class Node<T> {
         if (Objects.equals(n, -999))
             return null;
 
-        Node<Integer> first = new Node<Integer>(n);
-        Node<Integer> last = first;
+        NodeClass<Integer> first = new NodeClass<Integer>(n);
+        NodeClass<Integer> last = first;
 
         System.out.println("enter a string, enter -999 to stop");
         n = reader.nextInt();
         while (!Objects.equals(n, -999)) {
-            last.setNext(new Node<Integer>(n));
+            last.setNext(new NodeClass<Integer>(n));
             last = last.getNext();
             System.out.println("enter char, enter -999 to stop");
             n = reader.nextInt();
@@ -86,7 +86,7 @@ public class Node<T> {
         return first;
     }
 
-    public Node(T value, Node<T> next) {
+    public NodeClass(T value, NodeClass<T> next) {
         this.value = value;
         this.next = next;
     }
@@ -95,7 +95,7 @@ public class Node<T> {
         return value;
     }
 
-    public Node<T> getNext() {
+    public NodeClass<T> getNext() {
         return next;
     }
 
@@ -103,7 +103,7 @@ public class Node<T> {
         this.value = value;
     }
 
-    public void setNext(Node<T> next) {
+    public void setNext(NodeClass<T> next) {
         this.next = next;
     }
 

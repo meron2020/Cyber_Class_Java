@@ -1,6 +1,6 @@
 package Grade_11.DataStructures.Node.BookQuestions.P_105.Q59;
 
-import Grade_11.DataStructures.Node.Node;
+import Grade_11.DataStructures.NodeClass;
 
 public class CityBuses {
     public String getCityName() {
@@ -11,14 +11,14 @@ public class CityBuses {
         this.cityName = cityName;
     }
 
-    public Node<Bus> getLines() {
+    public NodeClass<Bus> getLines() {
         return lines;
     }
 
-    public void setLines(Node<Bus> lines) {
+    public void setLines(NodeClass<Bus> lines) {
         this.lines = lines;
     }
 
     private String cityName;
-    private Node<Bus> lines;
+    private NodeClass<Bus> lines;
 }

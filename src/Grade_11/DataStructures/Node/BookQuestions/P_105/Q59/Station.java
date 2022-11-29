@@ -1,7 +1,5 @@
 package Grade_11.DataStructures.Node.BookQuestions.P_105.Q59;
 
-import Grade_11.DataStructures.Node.Node;
-
 public class Station {
     private String street;
     private int num;

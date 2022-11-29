@@ -1,6 +1,6 @@
 package Grade_11.DataStructures.Node.BookQuestions.P_101.Q_54;
 
-import Grade_11.DataStructures.Node.Node;
+import Grade_11.DataStructures.NodeClass;
 
 public class Program {
     public static boolean checkIfLotteryStable(Lottery lottery) {
@@ -20,8 +20,8 @@ public class Program {
         return max - min < 20;
     }
 
-    public static int checkIfLotteriesStable(Node<Lottery> lotteries) {
-        Node<Lottery> currentLottery = lotteries;
+    public static int checkIfLotteriesStable(NodeClass<Lottery> lotteries) {
+        NodeClass<Lottery> currentLottery = lotteries;
         int counter = 0;
         while (currentLottery != null) {
             if (checkIfLotteryStable(currentLottery.getValue())) {

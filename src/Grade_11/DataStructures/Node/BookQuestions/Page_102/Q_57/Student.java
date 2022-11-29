@@ -1,6 +1,6 @@
 package Grade_11.DataStructures.Node.BookQuestions.Page_102.Q_57;
 
-import Grade_11.DataStructures.Node.Node;
+import Grade_11.DataStructures.NodeClass;
 
 public class Student {
     public String getName() {
@@ -11,7 +11,7 @@ public class Student {
         this.name = name;
     }
 
-    public Student(String name, int id, int year, Node<Score> scores) {
+    public Student(String name, int id, int year, NodeClass<Score> scores) {
         this.name = name;
         Id = id;
         this.year = year;
@@ -34,18 +34,18 @@ public class Student {
         this.year = year;
     }
 
-    public Node<Score> getScores() {
+    public NodeClass<Score> getScores() {
         return scores;
     }
 
-    public void setScores(Node<Score> scores) {
+    public void setScores(NodeClass<Score> scores) {
         this.scores = scores;
     }
 
     private String name;
     private int Id;
     private int year;
-    private Node<Score> scores;
+    private NodeClass<Score> scores;
 
 
 }

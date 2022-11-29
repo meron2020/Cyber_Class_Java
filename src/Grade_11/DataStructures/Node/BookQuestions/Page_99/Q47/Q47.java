@@ -1,11 +1,11 @@
 package Grade_11.DataStructures.Node.BookQuestions.Page_99.Q47;
 
-import Grade_11.DataStructures.Node.Node;
+import Grade_11.DataStructures.NodeClass;
 
 public class Q47 {
-    public static int mostThrownNumber(Node<Integer> list) {
+    public static int mostThrownNumber(NodeClass<Integer> list) {
         int[] throwOptions = new int[13];
-        Node<Integer> p = list;
+        NodeClass<Integer> p = list;
         while (p != null) {
             throwOptions[p.getValue()]++;
             p = p.getNext();

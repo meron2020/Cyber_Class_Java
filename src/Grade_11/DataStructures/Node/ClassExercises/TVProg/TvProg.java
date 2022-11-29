@@ -1,7 +1,5 @@
 package Grade_11.DataStructures.Node.ClassExercises.TVProg;
 
-import Grade_11.DataStructures.Node.Node;
-
 public class TvProg {
     private String name;
     private int day;
