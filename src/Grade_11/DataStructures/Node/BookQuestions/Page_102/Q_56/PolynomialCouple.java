@@ -26,5 +26,10 @@ public class PolynomialCouple {
 
     private int degree;
 
+    public PolynomialCouple(PolynomialCouple polyToCopy) {
+        this.coefficient = polyToCopy.getCoefficient();
+        this.degree = polyToCopy.getDegree();
+    }
+
 
 }
