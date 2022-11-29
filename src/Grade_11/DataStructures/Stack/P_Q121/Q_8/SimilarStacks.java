@@ -20,12 +20,18 @@ public class SimilarStacks {
                     temp2.push(stack2.pop());
                 }
             }
+            while (!temp2.isEmpty()) {
+                stack2.push(temp2.pop());
+            }
             if (!foundSame) {
                 same = false;
             }
             else {
                 stack1.push(stack1.pop());
             }
+        }
+        while (!temp1.isEmpty()) {
+            stack2.push(temp1.pop());
         }
         return same;
     }
