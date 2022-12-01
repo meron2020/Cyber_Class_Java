@@ -1,4 +1,4 @@
-package Grade_11.DataStructures.Stack;
+package Grade_11.DataStructures.Stack.P_Q121;
 
 import Grade_11.DataStructures.NodeClass;
 
@@ -35,5 +35,19 @@ public class Stack<T> {
         return "top -> " + temp.substring(0, temp.length() - 4) + "bottom";
     }
 
+    public static Stack<Integer> clone(Stack<Integer> s1) {
+        Stack<Integer> s2 = new Stack<Integer>();
+        Stack<Integer> s3 = new Stack<Integer>();
+        while (!s1.isEmpty()) {
+            s2.push(s1.pop());
+        }
+        while (!s2.isEmpty()) {
+            int x = s2.pop();
+            s1.push(x);
+            s3.push(x);
+        }
+        return s3;
+
+    }
 
 }

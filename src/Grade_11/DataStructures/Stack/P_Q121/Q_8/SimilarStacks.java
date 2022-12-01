@@ -1,6 +1,6 @@
 package Grade_11.DataStructures.Stack.P_Q121.Q_8;
 
-import Grade_11.DataStructures.Stack.Stack;
+import Grade_11.DataStructures.Stack.P_Q121.Stack;
 
 public class SimilarStacks {
     public static boolean areSimilar(Stack<Integer> stack1, Stack<Integer> stack2) {
