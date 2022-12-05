@@ -1,10 +1,9 @@
 package Grade_11.DataStructures.Stack.P_Q121.Q_5;
 
-
-import java.util.Stack;
+import Grade_11.DataStructures.Stack.P_Q121.Stack;
 
 public class Program {
-    public static boolean ordered(<Integer> stack) {
+    public static boolean ordered(Stack<Integer> stack) {
         Stack<Integer> tempStack = new Stack<>();
         boolean ordered = true;
         if (stack.isEmpty()) {

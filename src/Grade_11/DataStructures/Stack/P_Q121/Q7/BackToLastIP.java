@@ -3,6 +3,7 @@ package Grade_11.DataStructures.Stack.P_Q121.Q7;
 import java.util.Scanner;
 
 import Grade_11.DataStructures.Stack.P_Q121.Stack;
+
 public class BackToLastIP {
     public static String back(Stack<String> ips, String backType) {
         if (backType.equals("BackX")) {
@@ -19,10 +20,17 @@ public class BackToLastIP {
             }
             if (counter == backNum) {
                 if (!ips.isEmpty()) {
-                    return ips.peek();
+                    return ips.top();
                 }
+                return "";
             }
-            return
         }
+        else if (backType.equals("Back")) {
+            if (!ips.isEmpty()) {
+                return ips.top();
+            }
+            return "";
+        }
+        return "";
     }
 }
