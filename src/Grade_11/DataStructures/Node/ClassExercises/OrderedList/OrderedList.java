@@ -1,8 +1,6 @@
 package Grade_11.DataStructures.Node.ClassExercises.OrderedList;
 
 import Grade_11.DataStructures.NodeClass;
-import Grade_11.DataStructures.Stack.P_Q121.Stack;
-import org.w3c.dom.Node;
 
 import java.util.Scanner;
 

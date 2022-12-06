@@ -1,6 +1,6 @@
-package Grade_11.DataStructures.Stack.P_Q121.ClassExercise;
+package Grade_11.DataStructures.Stack.P_96;
 
-import Grade_11.DataStructures.Stack.P_Q121.Stack;
+import Grade_11.DataStructures.Stack.Stack;
 
 import java.util.Scanner;
 

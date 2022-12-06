@@ -1,6 +1,6 @@
-package Grade_11.DataStructures.Stack.P_Q121.Q_5;
+package Grade_11.DataStructures.Stack.P_121.Q_5;
 
-import Grade_11.DataStructures.Stack.P_Q121.Stack;
+import Grade_11.DataStructures.Stack.Stack;
 
 public class Program {
     public static boolean ordered(Stack<Integer> stack) {

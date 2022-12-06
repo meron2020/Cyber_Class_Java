@@ -1,6 +1,6 @@
-package Grade_11.DataStructures.Stack.P_Q121.Q_6;
+package Grade_11.DataStructures.Stack.P_121.Q_6;
 
-import Grade_11.DataStructures.Stack.P_Q121.Stack;
+import Grade_11.DataStructures.Stack.Stack;
 
 public class CircularMovement {
     public static Stack<Integer> moveTopToBottom(Stack<Integer> stack) {

@@ -1,4 +1,4 @@
-package Grade_11.DataStructures.Stack.P_Q121;
+package Grade_11.DataStructures.Stack;
 
 import Grade_11.DataStructures.NodeClass;
 

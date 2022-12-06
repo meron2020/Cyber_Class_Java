@@ -1,8 +1,8 @@
-package Grade_11.DataStructures.Stack.P_Q121.Q7;
+package Grade_11.DataStructures.Stack.P_121.Q7;
 
 import java.util.Scanner;
 
-import Grade_11.DataStructures.Stack.P_Q121.Stack;
+import Grade_11.DataStructures.Stack.Stack;
 
 public class BackToLastIP {
     //My Solution
