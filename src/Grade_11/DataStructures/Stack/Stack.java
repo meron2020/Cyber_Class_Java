@@ -2,6 +2,8 @@ package Grade_11.DataStructures.Stack;
 
 import Grade_11.DataStructures.NodeClass;
 
+import java.util.Scanner;
+
 public class Stack<T> {
 
     private NodeClass<T> head;
@@ -33,6 +35,30 @@ public class Stack<T> {
     public String toString() {
         String temp = head.toString();
         return "top -> " + temp.substring(0, temp.length() - 4) + "bottom";
+    }
+
+    public static void insertToSortedStack(Stack<Integer> orderedStack, int numToAdd) {
+        Stack<Integer> tempStack = new Stack<>();
+        while (!orderedStack.isEmpty() && orderedStack.top() < numToAdd) {
+            tempStack.push(orderedStack.pop());
+        }
+        orderedStack.push(numToAdd);
+        while (!tempStack.isEmpty()) {
+            orderedStack.push(tempStack.pop());
+        }
+    }
+
+    public static Stack<Integer> createSortedStack() {
+        Scanner reader = new Scanner(System.in);
+        Stack<Integer> stack = new Stack<>();
+        System.out.println("Enter a number into the stack, enter -999 if you want to finish the stack >>");
+        int num = reader.nextInt();
+        while (num != -999) {
+            insertToSortedStack(stack, num);
+            System.out.println("Enter a number into the stack, enter -999 if you want to finish the stack >>");
+            num = reader.nextInt();
+        }
+        return stack;
     }
 
     public static Stack<Integer> clone(Stack<Integer> s1) {
