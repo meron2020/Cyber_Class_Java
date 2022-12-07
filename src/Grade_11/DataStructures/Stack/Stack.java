@@ -37,6 +37,17 @@ public class Stack<T> {
         return "top -> " + temp.substring(0, temp.length() - 4) + "bottom";
     }
 
+    public static void printIntegerStack(Stack<Integer> stack) {
+        Stack<Integer> temp = new Stack<Integer>();
+        while (!stack.isEmpty()) {
+            System.out.println(stack.top());
+            temp.push(stack.pop());
+        }
+        while (!temp.isEmpty()) {
+            stack.push(temp.pop());
+        }
+    }
+
     public static void insertToSortedStack(Stack<Integer> orderedStack, int numToAdd) {
         Stack<Integer> tempStack = new Stack<>();
         while (!orderedStack.isEmpty() && orderedStack.top() < numToAdd) {
