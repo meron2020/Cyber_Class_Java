@@ -47,4 +47,23 @@ public class Program {
         }
         return primary(num, y);
     }
+
+    public static boolean allEvenOrOddDigits(int num) {
+        if (num < 10) {
+            return true;
+        }
+        if (num / 100 == 0) {
+            int lastDigit = num % 10;
+            int secondToListDigit = (num / 10) % 10;
+            if (lastDigit % 2 == secondToListDigit % 2) {
+                return true;
+            }
+            return false;
+        }
+        return allEvenOrOddDigits(num / 10);
+    }
+
+    public static void main(String[] args) {
+        System.out.println(allEvenOrOddDigits(75971));
+    }
 }
