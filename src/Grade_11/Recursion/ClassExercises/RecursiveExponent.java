@@ -1,4 +1,4 @@
-package Grade_11.Recursion;
+package Grade_11.Recursion.ClassExercises;
 
 public class RecursiveExponent {
     public static int recursiveExponent(int x, int y) {
