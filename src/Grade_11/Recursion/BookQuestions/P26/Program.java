@@ -45,7 +45,7 @@ public class Program {
         if (num % y == 0) {
             return false;
         }
-        return primary(num, y-1);
+        return primary(num, y - 1);
     }
 
     public static boolean allEvenOrOddDigits(int num) {
@@ -60,7 +60,19 @@ public class Program {
         return allEvenOrOddDigits(num / 10);
     }
 
+    public static int sumOfSquaresAndMultiples(int y) {
+        if (y == 1) {
+            return 2 * y;
+        }
+        if (y % 2 == 0) {
+            return (int) Math.pow(y, 2) + sumOfSquaresAndMultiples(y - 1);
+        }
+        return 2 * y + sumOfSquaresAndMultiples(y - 1);
+
+    }
+
     public static void main(String[] args) {
         System.out.println(allEvenOrOddDigits(75971));
+        System.out.println(sumOfSquaresAndMultiples(5));
     }
 }
