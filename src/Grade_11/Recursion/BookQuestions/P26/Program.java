@@ -45,21 +45,18 @@ public class Program {
         if (num % y == 0) {
             return false;
         }
-        return primary(num, y);
+        return primary(num, y-1);
     }
 
     public static boolean allEvenOrOddDigits(int num) {
         if (num < 10) {
             return true;
         }
-        if (num / 100 == 0) {
-            int lastDigit = num % 10;
-            int secondToListDigit = (num / 10) % 10;
-            if (lastDigit % 2 == secondToListDigit % 2) {
-                return true;
-            }
+        if (num % 2 != num / 10 % 2) {
             return false;
         }
+
+
         return allEvenOrOddDigits(num / 10);
     }
 
