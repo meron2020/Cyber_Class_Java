@@ -1,4 +1,4 @@
-package Grade_11.DataStructures.Queue.P_153.Q2;
+package Grade_11.DataStructures.Queue.P_153.Q8;
 
 import Grade_11.DataStructures.Queue.Queue;
 
