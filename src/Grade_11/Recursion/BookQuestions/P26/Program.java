@@ -62,10 +62,10 @@ public class Program {
 
     public static int sumOfSquaresAndMultiples(int y) {
         if (y == 1) {
-            return 2 * y;
+            return 2;
         }
         if (y % 2 == 0) {
-            return (int) Math.pow(y, 2) + sumOfSquaresAndMultiples(y - 1);
+            return y * y + sumOfSquaresAndMultiples(y - 1);
         }
         return 2 * y + sumOfSquaresAndMultiples(y - 1);
 
