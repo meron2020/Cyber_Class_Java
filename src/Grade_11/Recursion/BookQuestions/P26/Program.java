@@ -71,6 +71,7 @@ public class Program {
 
     }
 
+
     public static void main(String[] args) {
         System.out.println(allEvenOrOddDigits(75971));
         System.out.println(sumOfSquaresAndMultiples(5));
