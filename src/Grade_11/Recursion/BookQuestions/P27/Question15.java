@@ -5,8 +5,7 @@ public class Question15 {
         if (i == 0) {
             if (array[i] > 0) {
                 return 1;
-            }
-            else {
+            } else {
                 return 0;
             }
         }

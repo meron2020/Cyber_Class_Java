@@ -19,7 +19,7 @@ public class Question18 {
         if (i == array.length - 1) {
             return !primary(array[i]);
         }
-        return !primary(array[i]) && noPrimaryNumbersInArray(array, i+1);
+        return !primary(array[i]) && noPrimaryNumbersInArray(array, i + 1);
     }
 
     public static boolean noPrimaryNumbersInArray(int[] array) {
