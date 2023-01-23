@@ -23,6 +23,17 @@ public class Queue<T> {
         return found;
     }
 
+    public static Queue<Integer> copy(Queue<Integer> q) {
+        Queue<Integer> q2 = new Queue<Integer>();
+        q.insert(null);
+        while (q.head() != null) {
+            q2.insert(q.head());
+            q.insert(q.remove());
+        }
+        q.remove();
+        return q2;
+    }
+
     public static boolean existSep(Queue<Integer> q, int num) {
         boolean found = false;
         Queue<Integer> temp = new Queue<Integer>();
