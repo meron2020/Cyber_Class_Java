@@ -7,9 +7,7 @@ public class Program {
         }
         for (int k = 0; k < n; k++) {
             dq.moveElement(i, j);
-
         }
-
     }
 
     public static void Balance(DoubleQueue dq) {
