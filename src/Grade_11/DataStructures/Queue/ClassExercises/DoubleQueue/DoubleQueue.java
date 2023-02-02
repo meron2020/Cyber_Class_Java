@@ -15,11 +15,11 @@ public class DoubleQueue {
         }
         return length;
     }
+
     public int getQSize(int i) {
         if (i == 1) {
             return getQLength(this.queue1);
-        }
-        else {
+        } else {
             return getQLength(this.queue2);
         }
     }
@@ -28,16 +28,13 @@ public class DoubleQueue {
         if (i == 1) {
             if (j == 1) {
                 queue1.insert(queue1.remove());
-            }
-            else {
+            } else {
                 queue2.insert(queue1.remove());
             }
-        }
-        else {
+        } else {
             if (j == 1) {
                 queue1.insert(queue2.remove());
-            }
-            else {
+            } else {
                 queue2.insert(queue2.remove());
             }
         }
