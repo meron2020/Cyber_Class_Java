@@ -7,6 +7,8 @@ public class Question21 {
         if (BinNode.isLeafInteger(t)) {
             return true;
         }
+        if (t.hasLeft() && !t.hasRight()) {
 
+        }
     }
 }
