@@ -10,7 +10,7 @@ public class Question13 {
         if (node.hasRight()) {
             checkClosestSon(node.getRight());
         }
-        if (node.hasRight() && node.hasRight()) {
+        if (node.hasLeft() && node.hasRight()) {
             if (Math.abs(node.getValue() - node.getLeft().getValue()) > Math.abs(node.getValue() - node.getRight().getValue())) {
                 System.out.println(node.getRight().getValue());
             } else {

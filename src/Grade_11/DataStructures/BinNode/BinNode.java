@@ -115,4 +115,34 @@ public class BinNode<T> {
 
         return sumSingle(t.getRight()) + sumSingle(t.getRight());
     }
+
+    public static boolean exist(BinNode<Integer> t, int x) {
+        if(t == null) {
+            return false;
+        }
+        if (t.getLeft().getValue() == x) {
+            return true;
+        }
+        return exist(t.getLeft(), x) || exist(t.getRight(), x);
+    }
+
+    public static int findMax(BinNode<Integer> t) {
+        if (BinNode.isLeafInteger(t)) {
+            return t.getValue();
+        }
+        if (t.hasLeft() && !t.hasRight()) {
+            return Math.max(findMax(t.getLeft()), t.getValue());
+        }
+        if (t.hasRight() && !t.hasLeft()) {
+            return Math.max(findMax(t.getRight()), t.getValue());
+        }
+        return Math.max(Math.max(findMax(t.getLeft()), findMax(t.getRight())), t.getValue());
+    }
+
+    public static int height(BinNode<Integer> t) {
+        if (t == null) {
+            return -1;
+        }
+        return Math.max(height(t.getLeft()), height(t.getRight())) + 1;
+    }
 }
