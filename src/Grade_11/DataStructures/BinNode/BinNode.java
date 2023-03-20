@@ -1,5 +1,7 @@
 package Grade_11.DataStructures.BinNode;
 
+import java.util.Scanner;
+
 public class BinNode<T> {
     public T getValue() {
         return value;
@@ -34,6 +36,13 @@ public class BinNode<T> {
     }
 
     private T value;
+
+    public BinNode(BinNode<T> left, T value, BinNode<T> right) {
+        this.value = value;
+        this.left = left;
+        this.right = right;
+    }
+
     private BinNode<T> left;
     private BinNode<T> right;
 
@@ -117,13 +126,23 @@ public class BinNode<T> {
     }
 
     public static boolean exist(BinNode<Integer> t, int x) {
-        if(t == null) {
+        if (t == null) {
             return false;
         }
         if (t.getLeft().getValue() == x) {
             return true;
         }
         return exist(t.getLeft(), x) || exist(t.getRight(), x);
+    }
+
+    public static boolean existCharacter(BinNode<Character> t, char x) {
+        if (t == null) {
+            return false;
+        }
+        if (t.getLeft().getValue() == x) {
+            return true;
+        }
+        return existCharacter(t.getLeft(), x) || existCharacter(t.getRight(), x);
     }
 
     public static int findMax(BinNode<Integer> t) {
@@ -144,5 +163,23 @@ public class BinNode<T> {
             return -1;
         }
         return Math.max(height(t.getLeft()), height(t.getRight())) + 1;
+    }
+
+    public static BinNode<Integer> createBinNode() {
+        System.out.println("Enter integer root value (Enter -1 for end):");
+        return readIntegerTree();
+    }
+
+    public static BinNode<Integer> readIntegerTree() {
+        Scanner scanner = new Scanner(System.in);
+        int value = scanner.nextInt();
+        if (value == -1) {
+            return null;
+        }
+        System.out.println("Enter left of " + value + " (or enter -1 to null)");
+        BinNode<Integer> left = readIntegerTree();
+        System.out.println("Enter right of " + value + " (or enter -1 to null)");
+        BinNode<Integer> right = readIntegerTree();
+        return new BinNode<Integer>(left, value, right);
     }
 }

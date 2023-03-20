@@ -4,11 +4,7 @@ import Grade_11.DataStructures.BinNode.BinNode;
 
 public class Question21 {
     public static boolean symmetric(BinNode<Integer> t) {
-        if (BinNode.isLeafInteger(t)) {
-            return true;
-        }
-        if (t.hasLeft() && !t.hasRight()) {
-
-        }
+        return BinNode.height(t.getLeft()) - BinNode.height(t.getRight()) <= 1
+                && BinNode.height(t.getLeft()) - BinNode.height(t.getRight()) >= -1;
     }
 }
