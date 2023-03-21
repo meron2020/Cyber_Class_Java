@@ -17,8 +17,16 @@ public class InfoTree {
         this.num = num;
     }
 
+    public InfoTree(char ch, int num) {
+        this.ch = ch;
+        this.num = num;
+    }
+
     private char ch;
     private int num;
 
+    public void add(int n) {
+        this.num += n;
+    }
 
 }
