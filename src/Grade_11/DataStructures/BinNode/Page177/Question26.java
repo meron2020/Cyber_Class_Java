@@ -16,6 +16,5 @@ public class Question26 {
     public static boolean fullTree(BinNode<Integer> t) {
         int height = BinNode.height(t);
         return numOfLeaves(t) == Math.pow(2, height);
-
     }
 }

@@ -30,6 +30,4 @@ public class PolynomialCouple {
         this.coefficient = polyToCopy.getCoefficient();
         this.degree = polyToCopy.getDegree();
     }
-
-
 }

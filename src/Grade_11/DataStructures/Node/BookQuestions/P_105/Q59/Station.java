@@ -28,7 +28,4 @@ public class Station {
     public boolean equals(Station s) {
         return this.street.equals(s.street) && this.num == s.num;
     }
-
-
-
 }

@@ -1,6 +1,5 @@
-package Grade_11.DataStructures;
+package Grade_11.DataStructures.BinNode;
 
-import Grade_11.DataStructures.BinNode.BinNode;
 
 public class NumberTree {
     public static void printAll(BinNode<Integer> t) {

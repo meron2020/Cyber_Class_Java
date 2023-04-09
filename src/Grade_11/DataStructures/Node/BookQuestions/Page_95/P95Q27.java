@@ -47,6 +47,4 @@ public class P95Q27 {
         list = sequenceBiggerThanTwo(list);
         NodeClass.printList(list);
     }
-
-
 }
