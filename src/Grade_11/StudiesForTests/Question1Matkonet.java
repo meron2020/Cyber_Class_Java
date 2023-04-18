@@ -31,7 +31,7 @@ public class Question1Matkonet {
     }
 
     public static void main(String[] args) {
-        int[] arr = {1,35,15,-13,54};
+        int[] arr = {1, 35, 15, -13, 54};
         int[] opposites = addOpposites(arr);
         for (int i = 0; i < opposites.length; i++) {
             System.out.println(opposites[i]);
