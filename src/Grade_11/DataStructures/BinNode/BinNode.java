@@ -85,6 +85,13 @@ public class BinNode<T> {
         return !t.hasLeft() && !t.hasRight();
     }
 
+    public static boolean isLeafString(BinNode<String> t) {
+        if (t == null) {
+            return false;
+        }
+        return !t.hasLeft() && !t.hasRight();
+    }
+
     public static boolean isLeafCharacter(BinNode<Integer> t) {
         if (t == null) {
             return false;
