@@ -23,6 +23,21 @@ public class Queue<T> {
         return found;
     }
 
+    public static boolean existString(Queue<String> q, String s) {
+        Queue<String> q2 = new Queue<String>();
+        boolean found = false;
+        while (!q.isEmpty()) {
+            if (s.equals(q.head())) {
+                found = true;
+            }
+            q2.insert(q.remove());
+        }
+        while (!q2.isEmpty()) {
+            q.insert(q.remove());
+        }
+        return found;
+    }
+
     public static Queue<Integer> copy(Queue<Integer> q) {
         Queue<Integer> q2 = new Queue<Integer>();
         q.insert(null);

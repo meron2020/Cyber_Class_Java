@@ -1,5 +1,7 @@
 package Grade_11.DataStructures.BinNode;
 
+import Grade_11.DataStructures.Queue.Queue;
+
 import java.util.Scanner;
 
 public class BinNode<T> {
@@ -111,6 +113,16 @@ public class BinNode<T> {
         }
     }
 
+    public static void breadthSearch(BinNode<Integer> t) {
+        Queue<BinNode<Integer>> qu = new Queue<BinNode<Integer>>();
+        BinNode<Integer> temp;
+        qu.insert(t);
+        while (!qu.isEmpty()) {
+            temp = qu.remove();
+            System.out.println(temp.getValue());
+        }
+    }
+
     public static int countNodes(BinNode<Integer> t) {
         if (t == null) {
             return 0;
@@ -140,6 +152,16 @@ public class BinNode<T> {
             return true;
         }
         return exist(t.getLeft(), x) || exist(t.getRight(), x);
+    }
+
+    public static boolean existString(BinNode<String> t, String x) {
+        if (t == null) {
+            return false;
+        }
+        if (t.getLeft().getValue().equals(x)) {
+            return true;
+        }
+        return existString(t.getLeft(), x) || existString(t.getRight(), x);
     }
 
     public static boolean existCharacter(BinNode<Character> t, char x) {

@@ -27,9 +27,10 @@ public class BlackAndWhiteTree {
                 }
             }
         }
-    }
+        return true;
+    }}
 
-    public static boolean blackAndWhiteTree(BinNode<String> tree) {
+    /*public static boolean blackAndWhiteTree(BinNode<String> tree) {
         if (tree != null) {
             if (!tree.getValue().equals("black") && !tree.getValue().equals("white")) {
                 return false;
@@ -38,4 +39,4 @@ public class BlackAndWhiteTree {
         }
         return true
     }
-}
+}*/
