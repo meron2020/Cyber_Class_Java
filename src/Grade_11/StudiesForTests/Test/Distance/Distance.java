@@ -1,4 +1,4 @@
-package Grade_11.StudiesForTests.Distance;
+package Grade_11.StudiesForTests.Test.Distance;
 
 import Grade_11.DataStructures.NodeClass;
 

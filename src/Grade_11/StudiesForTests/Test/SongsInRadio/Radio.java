@@ -1,4 +1,4 @@
-package Grade_11.StudiesForTests.SongsInRadio;
+package Grade_11.StudiesForTests.Test.SongsInRadio;
 
 import Grade_11.DataStructures.NodeClass;
 

@@ -1,4 +1,4 @@
-package Grade_11.StudiesForTests.SongsInRadio;
+package Grade_11.StudiesForTests.Test.SongsInRadio;
 
 public class Artist {
     private String name;

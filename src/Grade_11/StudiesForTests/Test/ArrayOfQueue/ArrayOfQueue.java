@@ -1,4 +1,4 @@
-package Grade_11.StudiesForTests.ArrayOfQueue;
+package Grade_11.StudiesForTests.Test.ArrayOfQueue;
 
 import Grade_11.DataStructures.NodeClass;
 import Grade_11.DataStructures.Queue.Queue;

@@ -1,4 +1,4 @@
-package Grade_11.StudiesForTests.SongsInRadio;
+package Grade_11.StudiesForTests.Test.SongsInRadio;
 
 public class Program {
     public static void galatzArtist(int reprisalWorth, String artistName, Radio galatz) {

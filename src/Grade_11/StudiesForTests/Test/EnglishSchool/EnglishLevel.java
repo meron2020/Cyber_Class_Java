@@ -1,4 +1,4 @@
-package Grade_11.StudiesForTests.EnglishSchool;
+package Grade_11.StudiesForTests.Test.EnglishSchool;
 
 public class EnglishLevel {
     private int level;

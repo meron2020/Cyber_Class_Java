@@ -10,7 +10,6 @@ public class ShomerHomot {
         return arr[0].getNum();
     }
 
-    public static String highestAverageInterceptions() {
-
-    }
+//    public static String highestAverageInterceptions() {
+//    }
 }

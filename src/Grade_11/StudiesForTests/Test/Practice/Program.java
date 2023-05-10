@@ -1,4 +1,4 @@
-package Grade_11.StudiesForTests.Practice;
+package Grade_11.StudiesForTests.Test.Practice;
 
 import Grade_11.DataStructures.NodeClass;
 

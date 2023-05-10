@@ -1,4 +1,4 @@
-package Grade_11.StudiesForTests.DigitsToIntegers;
+package Grade_11.StudiesForTests.Test.DigitsToIntegers;
 
 import Grade_11.DataStructures.NodeClass;
 
